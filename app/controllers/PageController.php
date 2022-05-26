@@ -6,6 +6,6 @@ class PageController
 {
     public function viewAction() 
     {
-        echo __METHOD__;
+        // echo __METHOD__;
     }
 }

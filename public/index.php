@@ -12,7 +12,7 @@ require_once HELPERS . '/function.php';
 require_once CONFIG . '/routes.php';
 
 new App();
-debug(Router::getRoutes());
+// debug(Router::getRoutes());
 // var_dump(App::$app->getProperties());
 // throw new Exception('Ошибочкаааа', 404);
 // echo $tes;
