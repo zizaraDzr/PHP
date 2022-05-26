@@ -16,4 +16,4 @@ new App();
 // var_dump(App::$app->getProperties());
 // throw new Exception('Ошибочкаааа', 404);
 // echo $tes;
-// 9
+// 11
