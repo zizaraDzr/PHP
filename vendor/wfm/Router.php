@@ -2,6 +2,8 @@
 
 namespace wfm;
 
+use Exception;
+
 class Router
 {
     protected static array $routes = [];
@@ -22,12 +24,40 @@ class Router
         return self::$route;
     } 
 
+    protected static function removeQueryString($url) 
+    {
+        if ($url) {
+            $params = explode('&', $url, 2);
+            // проверить содержит строку подстроку
+            if (false === str_contains($params[0], '=')) {
+                // отрезать правый символ с строки
+                return rtrim($params[0], '/');
+            }
+        } else {
+            return '';
+        }
+    }
+
     public static function dispath($url)
     {
+        $url = self::removeQueryString($url);
         if (self::matchRoute($url)) {
-            echo 'Ok';
+            $controller = 'app\controllers\\' . self::$route['admin_prefix'] . self::$route['controller']. 'Controller';
+            if (class_exists($controller)) {
+                $controllerObject = new $controller(self::$route);
+                $action = self::lowerCamelCase(self::$route['action']. 'Action');
+                // Если метод в классе найден
+                // indexAction
+                if (method_exists($controllerObject, $action)) {
+                    $controllerObject->$action();
+                } else {
+                    throw new Exception("Метод {$controller}::{$action} не найден", 404);            
+                }
+            } else {
+            throw new Exception("Контроллер {$controller} не найден", 404);    
+            }
         } else {
-            echo 'No';
+            throw new Exception('Страница не найдена', 404);
         }
     } 
 
@@ -35,7 +65,6 @@ class Router
     {
         foreach (self::$routes as $pattern => $route) {
             if (preg_match("#{$pattern}#", $url, $matches)) {
-                debug($matches);
                 foreach ($matches as $key => $value) {
                     if (is_string($key)) {
                         $route[$key] = $value;
@@ -47,11 +76,10 @@ class Router
                 if (!isset($route['admin_prefix'])) {
                     $route['admin_prefix'] = '';
                 } else {
-                    $route['admin_prefix'] = '\\';
+                    $route['admin_prefix'] .= '\\';
                 }
-                debug($route);
                 $route['controller'] = self::upperCamelCase($route['controller']);
-                debug($route);
+                self::$route = $route;
                 return true;
             }
         }

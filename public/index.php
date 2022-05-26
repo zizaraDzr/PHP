@@ -16,4 +16,4 @@ debug(Router::getRoutes());
 // var_dump(App::$app->getProperties());
 // throw new Exception('Ошибочкаааа', 404);
 // echo $tes;
-// 7
+// 9

@@ -1,1 +1,61 @@
 
+[2022-05-26 14:26:37] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:14] ТЕКСТ Ошибки: Контроллер app\controllers\MainController не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 41
+===
+[2022-05-26 14:26:19] ТЕКСТ Ошибки: Контроллер app\controllers\MainController не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 41
+===
+[2022-05-26 14:26:52] ТЕКСТ Ошибки: Контроллер app\controllers\admin\MainController не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 42
+===
+[2022-05-26 14:26:02] ТЕКСТ Ошибки: Метод app\controllers\PageController::viewAction не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 39
+===
+[2022-05-26 14:26:15] ТЕКСТ Ошибки: Метод app\controllers\PageController::viewAction не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 40
+===
+[2022-05-26 14:26:21] ТЕКСТ Ошибки: Контроллер app\controllers\admin\MainController не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 43
+===
+[2022-05-26 14:26:28] ТЕКСТ Ошибки: Контроллер app\controllers\admin\MainController не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 43
+===
+[2022-05-26 14:26:28] ТЕКСТ Ошибки: Контроллер app\controllers\admin\MainController не найден | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 43
+===
+[2022-05-26 14:26:41] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 46
+===
+[2022-05-26 14:26:05] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 57
+===
+[2022-05-26 14:26:13] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 56
+===
+[2022-05-26 14:26:27] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 56
+===
+[2022-05-26 14:26:31] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 56
+===
+[2022-05-26 14:26:49] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 31
+===
+[2022-05-26 14:26:51] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 31
+===
+[2022-05-26 14:26:08] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:55] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:56] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:56] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:56] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:56] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:12] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:12] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:22] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:40] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 33
+===
+[2022-05-26 14:26:49] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 33
+===
+[2022-05-26 14:26:54] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 14:26:27] ТЕКСТ Ошибки: Array to string conversion | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 32
+===
+[2022-05-26 15:26:00] ТЕКСТ Ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка 56
+===
