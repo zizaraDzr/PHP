@@ -7,3 +7,9 @@ function debug($data, $die = false)
         die;
     }
 }
+
+// против потенциальных опасностей в html
+function h($str)
+{
+ return htmlspecialchars($str);
+}
