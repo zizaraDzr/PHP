@@ -24,6 +24,7 @@ class View
     public function render($data)
     {
         if (is_array($data)) {
+            // данные станут доступны в подлючаемом шаблоне
             extract($data);
         }
         $prefix = str_replace('\\', '/', $this->route['admin_prefix']);
