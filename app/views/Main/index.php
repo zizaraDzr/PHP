@@ -1,5 +1,7 @@
+<h1>Hello Main/index!</h1>
 
-
-<h1>Main page</h1>
-
-<?php debug($name); ?>
+<?php if (!empty($names)): ?>
+    <?php foreach ($names as $name): ?>
+        <?= $name->id ?> => <?= $name->name ?><br>
+    <?php endforeach; ?>
+<?php endif; ?>

@@ -1,19 +1,22 @@
 <?php
 
+
 namespace wfm;
 
-// abstract - от него нельзя создать объект
+
 abstract class Controller
 {
+
     public array $data = [];
     public array $meta = [];
     public false|string $layout = '';
     public string $view = '';
     public object $model;
 
+
     public function __construct(public $route = [])
     {
-        // debug($this->route);
+
     }
 
     public function getModel()
@@ -28,22 +31,20 @@ abstract class Controller
     {
         $this->view = $this->view ?: $this->route['action'];
         (new View($this->route, $this->layout, $this->view, $this->meta))->render($this->data);
-    
     }
 
     public function set($data)
     {
         $this->data = $data;
-    
     }
 
-    public function setMeta($title = '', $description = '',  $keywords = '')
+    public function setMeta($title = '', $description = '', $keywords = '')
     {
-        $this->meta = [
-            'title' => $title,
-            'description'=> $description,
-            'keywords'=> $keywords
-        ];
-    
+       $this->meta = [
+           'title' => $title,
+           'description' => $description,
+           'keywords' => $keywords,
+       ];
     }
+
 }
