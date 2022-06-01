@@ -1,0 +1,3 @@
+<?= $this->getDbLogs() ?>
+</body>
+</html>
