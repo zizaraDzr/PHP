@@ -10,4 +10,4 @@ require_once CONFIG . '/routes.php';
 
 new \wfm\App();
 
-// patr 3 end
+// patr 2 lesson 3 end
