@@ -12,7 +12,9 @@ class MainController extends AppController
     public function indexAction()
     {
         $slides = R::findAll('slider');
-        $this->set(compact('slides'));
+        $products = $this->model ->get_list(1, 6);
+        // debug($products, 1);
+        $this->set(compact('slides', 'products'));
     }
 
 }
