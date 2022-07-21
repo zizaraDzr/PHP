@@ -12,3 +12,16 @@ function h($str)
 {
     return htmlspecialchars($str);
 }
+
+function redirect($http = false)
+{
+    if ($http) {
+        $redirect = $http;
+    } else {
+        //isset($_SERVER['HTTP_REFERER'] - адрес с которого пришел пользователь
+        $redirect = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER']: PATH;
+    }
+    // сделать редирект
+    header("Location: $redirect");
+    die;
+}
