@@ -30,3 +30,42 @@ function base_url()
 {
     return PATH .'/' . (wfm\App::$app->getProperty('lang') ? wfm\App::$app->getProperty('lang') .'/' : '');
 }
+// get('page')
+// $_GET['page']
+
+/**
+ * @param string $key of GET array
+ * @param string $type Values i, f, s
+ * @return float|int|string
+ */
+function get($key, $type = 'i')
+ {
+    $param = $key;
+    $$param = $_GET[$param] ?? '';
+    // $page = $_GET['page'] ?? ''
+    if ($type == 'i') {
+        return (int)$$param;
+    } elseif ($type == 'f') {
+        return (float)$$param;
+    } else {
+        return trim($$param);
+    }
+ }
+ /**
+ * @param string $key of POST array
+ * @param string $type Values i, f, s
+ * @return float|int|string
+ */
+function post($key, $type = 'i')
+{
+   $param = $key;
+   $$param = $_POST[$param] ?? '';
+   // $page = $_GET['page'] ?? ''
+   if ($type == 'i') {
+       return (int)$$param;
+   } elseif ($type =='f') {
+       return (float)$$param;
+   } else {
+       return trim($$param);
+   }
+}
