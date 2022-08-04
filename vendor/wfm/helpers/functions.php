@@ -1,5 +1,7 @@
 <?php
 
+use wfm\Language;
+
 function debug($data, $die = false)
 {
     echo '<pre>' . print_r($data, 1) . '</pre>';
@@ -68,4 +70,13 @@ function post($key, $type = 'i')
    } else {
        return trim($$param);
    }
+}
+
+function __($key)
+{
+    echo Language::get($key);
+}
+function ___($key)
+{
+    return Language::get($key);
 }
