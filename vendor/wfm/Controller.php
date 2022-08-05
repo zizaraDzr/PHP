@@ -8,11 +8,7 @@ abstract class Controller
 {
 
     public array $data = [];
-    public array $meta = [
-        'title' => '',
-        'description' => '',
-        'keywords' => ''
-    ];
+    public array $meta = ['title' => '', 'keywords' => '', 'description' => ''];
     public false|string $layout = '';
     public string $view = '';
     public object $model;
@@ -53,6 +49,7 @@ abstract class Controller
 
     public function isAjax(): bool
     {
-        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpReauest';
+        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
     }
+
 }
