@@ -15,8 +15,17 @@ class CartController extends AppController
             return false;
         }
 
-        $product = $this->model->get_product($id, $lang);
-        debug($product);
-        die();
+        // $product = $this->model->get_product($id, $lang);
+        var_dump($id);
+        // if ($product) {
+        //     return false;
+        // }
+
+        // $this->model->add_to_cart($product, $qty);
+        // if ($this->isAjax()) {
+        //     debug($_SESSION['cart'], 1);
+        // }
+        // redirect();
+        // return true;
     }
 }
