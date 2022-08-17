@@ -60,13 +60,13 @@ $('.add-to-cart').on('click', function(e) {
 	const id = $(this).data('id')
 	const qty = $('#input-quantity').val() ? $('#input-quantity').val() : 1
 	const $this = $(this)
-	console.log(id, qty)
 	$.ajax({
 		url: 'cart/add',
 		type: 'GET',
 		data: {id, qty},
 		success: function (res) {
 			showCart(res)
+			$this.find('i').removeClass('fa-shopping-cart').addClass('fa-luggage-cart');
 		},
 		error: function() {
 			alert('Error')
