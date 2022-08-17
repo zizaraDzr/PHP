@@ -1,5 +1,13 @@
 $(function() {
 // cart
+
+function showCart(card) {
+	$('#cart-modal .modal-cart-content').html(card);
+	const myModalEL = document.querySelector('#cart-modal');
+	const modal = bootstrap.Modal.getOrCreateInstance(myModalEL);
+	modal.show();
+}
+
 $('.add-to-cart').on('click', function(e) {
 	e.preventDefault()
 	const id = $(this).data('id')
@@ -11,7 +19,7 @@ $('.add-to-cart').on('click', function(e) {
 		type: 'GET',
 		data: {id, qty},
 		success: function (res) {
-			console.log(res)
+			showCart(res)
 		},
 		error: function() {
 			alert('Error')

@@ -100,3 +100,7 @@
 =================
 [2022-08-05 15:59:05] Текст ошибки: Не найден вид D:\OpenServer\domains\ishop.loc/app/views/Cart/add.php | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\View.php | Строка: 37
 =================
+[2022-08-17 10:11:39] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка: 66
+=================
+[2022-08-17 10:58:09] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\ishop.loc\vendor\wfm\Router.php | Строка: 66
+=================
