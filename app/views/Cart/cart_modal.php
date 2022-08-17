@@ -20,7 +20,7 @@
                             <td><a href="product/<?= $item['slug'] ?>"><?= $item['title'] ?></a></td>
                             <td><?= $item['qty'] ?></td>
                             <td><?= $item['price'] ?></td>
-                            <td><a href="cart/delete?id=<?= $id ?>" class="del-item">Удалить</a></td>
+                            <td><a href="cart/delete?id=<?= $id ?>" data-id="<?= $id ?>" class="del-item">Удалить</a></td>
                         </tr>
                     <?php endforeach; ?>
                     <tr>
@@ -39,9 +39,9 @@
     <?php endif; ?>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-succes ripple" data-bs-dismiss="modal"><?php __('tpl_cart_btn_continue') ?></button>
+    <button type="button" class="btn btn-success ripple" data-bs-dismiss="modal"><?php __('tpl_cart_btn_continue') ?></button>
     <?php if (!empty($_SESSION['cart'])) : ?>
         <button type="button" class="btn btn-primary"><?php __('tpl_cart_btn_order') ?></button>
-        <button type="button" class="btn btn-primary"><?php __('tpl_cart_btn_clear') ?></button>
+        <button type="button" id="clear-cart" class="btn btn-danger"><?php __('tpl_cart_btn_clear') ?></button>
     <?php endif; ?>
 </div>
